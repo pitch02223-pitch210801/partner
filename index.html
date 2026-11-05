@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="착한철거 파트너 안내">
+<meta property="og:description" content="문의는 저희가 모으고, 공사는 사장님이 하십니다. 조건을 3분이면 읽을 수 있게 정리했습니다.">
+<meta property="og:type" content="website">
+<meta name="description" content="착한철거 파트너 안내">
+<meta name="robots" content="noindex">
+<title>착한철거 파트너 안내</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap">
+<style>
+:root{
+  --bg:#F6F7F9; --surface:#FFFFFF; --fg:#14202E; --muted:#5B6776; --line:#DDE1E7;
+  --navy:#0D2134; --accent:#E5650A; --accent-soft:#FDEBDD; --on-navy:#FFFFFF; --navy-soft:#E8EDF3;
+  --font:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0B131C; --surface:#131E2A; --fg:#EAEFF5; --muted:#9AA7B6; --line:#243345;
+    --navy:#1B2F45; --accent:#F28A3C; --accent-soft:#3A2414; --on-navy:#FFFFFF; --navy-soft:#1A2938; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0B131C; --surface:#131E2A; --fg:#EAEFF5; --muted:#9AA7B6; --line:#243345;
+  --navy:#1B2F45; --accent:#F28A3C; --accent-soft:#3A2414; --on-navy:#FFFFFF; --navy-soft:#1A2938; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.65;
+  padding-block:0;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  word-break:keep-all;overflow-wrap:break-word}
+.wrap{max-width:620px;margin:0 auto;display:flex;flex-direction:column;gap:44px;padding-block:20px 56px}
+h1,h2,h3,p{margin:0}
+h1{font-size:clamp(28px,7.4vw,38px);line-height:1.25;font-weight:800;letter-spacing:-.02em;text-wrap:balance}
+h2{font-size:21px;line-height:1.35;font-weight:800;letter-spacing:-.01em;text-wrap:balance}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--accent);margin-bottom:8px}
+.sub{color:var(--muted);margin-top:10px}
+section{display:flex;flex-direction:column;gap:16px}
+.top{display:flex;align-items:center;gap:12px}
+.logo{width:40px;height:44px;background:#fff;border-radius:8px;padding:4px;display:grid;place-items:center;flex:none}
+.logo img{width:100%;height:auto;display:block}
+.top b{font-size:17px;font-weight:800;letter-spacing:-.01em}
+.top span{display:block;font-size:13px;color:var(--muted);line-height:1.3}
+.hero{display:flex;flex-direction:column;gap:14px;padding-top:6px}
+.hero p{font-size:17px}
+.facts{display:grid;grid-template-columns:1fr;gap:12px}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;display:grid;grid-template-columns:auto 1fr;column-gap:16px;row-gap:2px;align-items:center}
+.fact .k{grid-column:1/-1;font-size:13px;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.fact .v{font-size:34px;font-weight:800;letter-spacing:-.03em;line-height:1.15;font-variant-numeric:tabular-nums;color:var(--navy)}
+:root[data-theme="dark"] .fact .v{color:var(--fg)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .fact .v{color:var(--fg)}}
+.fact .v small{font-size:16px;font-weight:700;margin-left:2px}
+.fact .n{font-size:14.5px;color:var(--muted);line-height:1.5}
+.fact.main{background:var(--navy);border-color:var(--navy)}
+.fact.main .k,.fact.main .n{color:#C5D0DC}
+.fact.main .v{color:var(--on-navy)!important}
+:root[data-theme="dark"] .fact.main .k,:root[data-theme="dark"] .fact.main .n{color:#B3C2D2}
+.diff{display:flex;flex-direction:column;gap:10px}
+.diff li{list-style:none;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.diff ul{margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.diff li b{display:block;font-size:16.5px}
+.diff li span{color:var(--muted);font-size:14.5px}
+.steps{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:0}
+.steps li{display:grid;grid-template-columns:36px 1fr;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+.steps li:first-child{border-top:0}
+.steps .no{width:32px;height:32px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:800;display:grid;place-items:center;font-size:15px;font-variant-numeric:tabular-nums}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}
+.tl{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;position:relative;margin-top:6px}
+.tl::before{content:"";position:absolute;left:12%;right:12%;top:11px;height:3px;background:var(--line);border-radius:2px}
+.tl .pt{text-align:center;position:relative;padding:0 4px}
+.tl .dot{width:22px;height:22px;border-radius:50%;background:var(--accent);margin:0 auto 8px;border:4px solid var(--surface);box-shadow:0 0 0 2px var(--accent);position:relative}
+.tl .pt:nth-child(2) .dot{background:var(--navy);box-shadow:0 0 0 2px var(--navy)}
+:root[data-theme="dark"] .tl .pt:nth-child(2) .dot{background:#7FA0C2;box-shadow:0 0 0 2px #7FA0C2}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .tl .pt:nth-child(2) .dot{background:#7FA0C2;box-shadow:0 0 0 2px #7FA0C2}}
+.tl b{display:block;font-size:17px;font-variant-numeric:tabular-nums}
+.tl span{display:block;font-size:13px;color:var(--muted);line-height:1.4}
+.rule{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font-size:14.5px}
+.zones{display:flex;flex-direction:column;gap:0;border:1px solid var(--line);border-radius:14px;background:var(--surface);overflow:hidden}
+.zone{display:grid;grid-template-columns:64px 1fr;gap:12px;padding:14px 16px;border-top:1px solid var(--line)}
+.zone:first-child{border-top:0}
+.zone b{font-weight:800;color:var(--navy)}
+:root[data-theme="dark"] .zone b{color:var(--fg)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .zone b{color:var(--fg)}}
+.zone span{color:var(--muted);font-size:15px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:12px}
+details+details{margin-top:-4px}
+summary{cursor:pointer;padding:15px 16px;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:22px;line-height:1;color:var(--accent);font-weight:500;flex:none}
+details[open] summary::after{content:"–"}
+summary:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:10px}
+details p{padding:0 16px 16px;color:var(--muted);font-size:15.5px}
+.faq{display:flex;flex-direction:column;gap:10px}
+.ask{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.ask li{display:flex;gap:10px;color:var(--muted);font-size:15.5px}
+.ask li::before{content:"–";color:var(--accent);font-weight:800}
+.go{background:var(--navy);color:var(--on-navy);border-radius:18px;padding:24px 20px;display:flex;flex-direction:column;gap:16px}
+.go h2{color:var(--on-navy)}
+.go ol{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px;counter-reset:g}
+.go li{display:grid;grid-template-columns:30px 1fr;gap:12px;counter-increment:g;color:#E4EBF2;font-size:16px}
+.go li::before{content:counter(g);width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;display:grid;place-items:center;font-size:14px}
+.go .em{background:rgba(255,255,255,.10);border-radius:12px;padding:14px 16px;font-size:16px}
+.go .em b{color:#fff}
+footer{color:var(--muted);font-size:13.5px;line-height:1.7;display:flex;flex-direction:column;gap:8px}
+.mail{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.mail code{font-family:inherit;color:var(--fg);user-select:all}
+.mail button{font:inherit;font-size:13px;font-weight:700;border:1px solid var(--line);background:var(--surface);color:var(--fg);padding:6px 12px;border-radius:999px;cursor:pointer}
+@media (prefers-reduced-motion:no-preference){ details summary::after{transition:transform .15s} }
+</style>
+<body>
+<main class="wrap">
+  <div class="top">
+    <div class="logo"><img alt="착한철거" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABFCAMAAADNehBfAAAAYFBMVEX///////7+///+/v79/f38/Pz29fXt7u/n5+fc3t/T1NbSwrOlrLSok4KAiZTvdA1kb31VYnFEU2MuQFMfNEkcLkEULEMSJjoRIzcPJDkNJDsPITUNITUKITcJHjIEGC3WaFLsAAAEkElEQVR42u1X25KkKBDNGcsLFs0iKAgK/v9f7knUqu6HHe2Hib3EZkR3pUgd8nIyySL6C/lBjz9OedKDvi3/BIDqbwag/0IQ3wAfvwSoT6neak1VVT2eHx9P/OE/VfT7pJGn9PR86dQKSM/S1PUvI9DZ6HxYlsUrGqJfQvAhWeq7dpe+u7C/tWmGLH4HmAG1rIZEcx5wCTDmZYUUgDyzuiRDfVOxPKpLgO4ECADYGCCFyADlbUV3AAJCsC6ZLQiMFdL3AFJYYUMBSC8AcRugHVNxYVkY4BUD8Z0YrCUGkV3YsRADUd/NQmfnCTKOVpHx+GRBDJhIHeSSB3V/iGhJHJroqGnatilyVQa1OBFa6k5dUHuu9vUFQGuL0fACMdiVabQkR+fYsdGKi2aALAQQYc9CoTIyakiiQLhCVn8NkHnfOi8HDwCwFYCSkHwLgLfO4QUwgwcyhkKOOxakT8VUWD2DB9LvnFqnWwB8kttrAQ9cTHCBHVvCDYA8l2P3ckZAg2eAUDrDDQu6ib/FuwvAMh8A6DHcaK4t6MbZFWEeIPXecfJJTt47qG68AnhRGaR/kbL/xMTmsi0f3bNpXmr7SW2vqeymXV5U9h4xOAjub2RhK/1g3TtSgrIWKsfEi9t8K42chQLgSx7Xgwe30giAwESa5wIQ1rD6+AKY43inGpf1IBIsgBoOHmAxxOkewPoCwNdCPojE7twBKGWz14LnCBzlzIFZ75Tz6mc/z3s1esjsAwM4aIC4UQvbGmNcM7Jgcl4THkoQsYLHfO2CHoaB/wZJij8GrbWiZ1nih+63jidlHDyleqsPqt7q//Kvka9cwWjy9fXP6g6ZqjIvf2ZImVGr9xnHwiH7mM1f2zc/3sP3jnafwdIYzVWhtOrKwmCN4HWtJc6rSRk7cP9WWvdUn+26IsUbeqVMTCNm7dZui6wbpZSLUSvVDRGNgYSxY8qbMZLslhR1Zm/YY08mYYPKMXqPEtbNGHxPTd52WZ4AMo9Hn6Avmb+LuVyRcFvmPVmSxgZSuL5iWKZRtS5Ho8VgBmMMKlloh95GnVLjlkelrPXLCoCRJ5+U5540W9CKVqd16jHTTWgmrifBbQHOkY55Uvjs0bgndiBz7+cYNLg20Gn0tlnERkzlBQ+90TmBFgX7NhirEyzXUjNwSkbLkV0oSZMxjm1dADoJc3KeBylc9rKvFTqahHcjAOYA01N2g3LbpggnAOCBvOgtOmsdR9mmlCyM3azweemJEDpdoyVOtcYb0QqLZsd+NaQHpALNpmrsxi0zRQRJb8vQkrRONhMi+6AnzhldzgPpzGl8gB+aG2URBqjZgxV38LJig1CyaboGMzHCLbmDSjvN06hb0nxB4McgoredAhdqnmqy7YQYygnS4hYvqbHWgmjUS5AIY8UPXYhENZ53mQIuD57PtwUsIE6jpUoiCBz3ciGwhWZbTWE0kEBlasBsWwbixEHkqIdNo3o4z9j5LP2fmePCwr+Sh+TMPqdwQQFgRMiPGdri8kg4S9f084EgZfN1XjsB9v0Q2xSAbE4vUDw+syO4BJhI5k8yY43SURDD8QAAAABJRU5ErkJggg=="></div>
+    <div><b>착한철거</b><span>파트너 1기 안내 · 경기 · 인천</span></div>
+  </div>
+  <div class="hero">
+    <div>
+      <div class="eyebrow">철거 사장님께</div>
+      <h1>문의는 저희가 모으고, 공사는 사장님이 하십니다</h1>
+    </div>
+    <p>저희는 광고로 철거·원상복구 문의를 모읍니다. 한 달에 100건이 넘게 들어옵니다. 그 문의를 사장님께 전달해 드리는 것이 저희가 하는 일입니다.</p>
+    <p style="color:var(--muted);font-size:15.5px">신청해 주셔서 감사합니다. 통화에서 말씀드린 내용을 한 번에 볼 수 있게 정리했습니다. 3분이면 읽습니다.</p>
+  </div>
+  <section>
+    <h2>조건은 세 가지입니다</h2>
+    <div class="facts">
+      <div class="fact main">
+        <div class="k">월회비</div>
+        <div class="v">44<small>만원</small></div>
+        <div class="n">40만원에 부가세 4만원을 더한 금액입니다. 1기 가격이고 정상 요금은 60만원입니다. 계약이 이어지는 동안 올리지 않습니다.</div>
+      </div>
+      <div class="fact">
+        <div class="k">보증</div>
+        <div class="v">월 8<small>건</small></div>
+        <div class="n">8건을 못 채우면 부족 1건당 5만원(부가세 별도)을 다음 달 회비에서 빼 드립니다.</div>
+      </div>
+      <div class="fact">
+        <div class="k">성공수수료</div>
+        <div class="v">0<small>원</small></div>
+        <div class="n">1억짜리 공사를 하셔도 저희는 월회비만 받습니다.</div>
+      </div>
+    </div>
+  </section>
+  <section class="diff">
+    <h2>다른 곳과 이렇게 다릅니다</h2>
+    <ul>
+      <li><b>한 건은 그 권역의 세 업체에만 갑니다</b><span>수십 곳에 뿌려서 서로 단가를 깎게 하지 않습니다.</span></li>
+      <li><b>연락처를 건건이 사 가는 방식이 아닙니다</b><span>월회비 하나로 정해진 건수를 받습니다.</span></li>
+      <li><b>건수와 평수가 고르게 갑니다</b><span>한 업체에 작은 현장만, 다른 업체에 큰 현장만 몰리지 않도록 저희가 배분합니다.</span></li>
+    </ul>
+  </section>
+  <section>
+    <h2>일이 흘러가는 순서</h2>
+    <ol class="steps">
+      <li><span class="no">1</span><span>저희가 문의를 받으면 사장님 휴대폰으로 고객 연락처와 공사 내용을 보내드립니다.</span></li>
+      <li><span class="no">2</span><span>사장님이 고객에게 연락하시고, 현장을 보시고, 견적을 내십니다.</span></li>
+      <li><span class="no">3</span><span>계약과 시공은 사장님 명의로 하십니다. 공사대금도 사장님이 직접 받으십니다.</span></li>
+      <li><span class="no">4</span><span>저희에게는 통화 결과와 계약 여부만 알려 주시면 됩니다.</span></li>
+    </ol>
+  </section>
+  <section>
+    <h2>한 달은 이렇게 셉니다</h2>
+    <div class="card">
+      <div class="tl">
+        <div class="pt"><div class="dot"></div><b>15일</b><span>월회비 입금<br>전달 시작</span></div>
+        <div class="pt"><div class="dot"></div><b>다음 달 14일</b><span>8건 전달<br>완료</span></div>
+        <div class="pt"><div class="dot"></div><b>다음 달 15일</b><span>다음 결제일</span></div>
+      </div>
+      <div class="rule">첫 입금일이 사장님의 결제일이 되고, 매월 그 날짜가 바뀌지 않습니다. 결제일까지 입금이 없으면 입금이 확인될 때까지 전달을 잠시 멈춥니다. 저희가 미리 문자로 알려 드립니다.</div>
+    </div>
+  </section>
+  <section>
+    <h2>경기·인천 네 권역</h2>
+    <div class="zones">
+      <div class="zone"><b>① 서부</b><span>인천 · 김포 · 부천 · 검단 · 계양 · 고양(일산) · 파주</span></div>
+      <div class="zone"><b>② 서남</b><span>수원 · 안산 · 화성 · 안양 · 시흥 · 의왕 · 광명 · 군포 · 과천</span></div>
+      <div class="zone"><b>③ 동북</b><span>남양주 · 하남 · 의정부 · 양주 · 양평 · 구리 · 포천</span></div>
+      <div class="zone"><b>④ 동남</b><span>성남 · 용인 · 광주 · 이천 · 평택 · 안성 · 오산 · 여주</span></div>
+    </div>
+    <p class="sub" style="margin-top:0;font-size:14.5px">지난달 문의 건수를 네 묶음이 비슷해지도록 맞춘 것이라, 어느 권역을 맡으셔도 받으시는 건수가 같습니다.</p>
+  </section>
+  <section>
+    <h2>자주 묻는 질문</h2>
+    <div class="faq">
+      <details><summary>세금계산서는 나오나요</summary><p>네, 입금하실 때마다 전자세금계산서를 발행해 드립니다. 저희는 일반과세 사업자입니다.</p></details>
+      <details><summary>공사가 성사되지 않으면요</summary><p>성사와 면허 책임은 사장님께 있고, 저희는 문의를 연결하는 플랫폼입니다. 대신 문의는 월 8건을 확실히 드립니다.</p></details>
+      <details><summary>언제부터 받나요</summary><p>월회비를 입금하신 날부터입니다. 전달은 고객에게 정보 제공 동의를 받은 문의부터 시작합니다.</p></details>
+      <details><summary>어떤 사업자가 할 수 있나요</summary><p>철거·건설·인테리어 업종으로 사업자등록이 되어 있고, 전자세금계산서를 발행할 수 있어야 합니다. 고객이 정부 지원금을 신청하면 그 공사를 맡으실 수 있어야 하기 때문입니다.</p></details>
+      <details><summary>전달받은 고객 정보는 어디까지 써도 되나요</summary><p>사장님 공사에만 써 주십시오. 다른 업체에 넘기면 계약이 해지될 수 있습니다.</p></details>
+      <details><summary>그만두고 싶으면요</summary><p>1개월 전에 알려 주시면 해지됩니다. 이미 낸 월회비는 돌려드리지 않습니다. 저희 사정으로 전달이 멈춘 기간은 일할로 돌려드립니다.</p></details>
+    </div>
+  </section>
+  <section>
+    <h2>부탁드리는 것</h2>
+    <ul class="ask">
+      <li>문의를 받으신 날 안에 고객에게 연락해 주십시오. 늦으면 고객이 다른 곳과 계약합니다.</li>
+      <li>현장에서 말씀하신 금액 외에 추가금을 그 자리에서 요구하지 말아 주십시오.</li>
+      <li>고객과 다툼이 생길 것 같으면 덮지 마시고 바로 알려 주십시오. 같이 풉니다.</li>
+    </ul>
+  </section>
+  <section class="go">
+    <h2>하시겠다면 이렇게 진행합니다</h2>
+    <div class="em">이 안내를 보내드린 문자에 <b>"하겠습니다"</b>와 업체명을 답장해 주세요.</div>
+    <ol>
+      <li>사업자등록증과 통장사본을 보내 주십시오. 건설업 등록증이 있으시면 함께 보내 주십시오.</li>
+      <li>계약서를 보내드립니다. 확인하시고 서명해 주십시오.</li>
+      <li>입금 안내를 받고 첫 월회비를 입금하시면, 입금하신 날부터 문의가 전달됩니다.</li>
+    </ol>
+  </section>
+  <footer>
+    <div>능력껏 공사하셔서 많이 버시면 좋겠습니다. 어려운 경기에 기회가 없어 능력을 못 펼치시는 철거 사장님들을 응원합니다.</div>
+    <div>착한철거 · 피치 (Kind Demo)<br>서울 강서구 강서로 454 웅진프라자 401호</div>
+    <div class="mail"><code id="mail">haonconsulting@gmail.com</code><button id="cp" type="button">복사</button></div>
+  </footer>
+</main>
+<script>
+(function(){
+  var b=document.getElementById('cp'), t=document.getElementById('mail');
+  if(!b||!t) return;
+  b.addEventListener('click',function(){
+    var done=function(){ b.textContent='복사됨'; setTimeout(function(){b.textContent='복사';},1600); };
+    var fallback=function(){
+      var r=document.createRange(); r.selectNodeContents(t);
+      var s=window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      b.textContent='선택됨';
+    };
+    try{ navigator.clipboard.writeText(t.textContent).then(done,fallback); }catch(e){ fallback(); }
+  });
+})();
+</script>
+</body>
+</html>
